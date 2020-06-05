@@ -5,6 +5,9 @@ class Person {
     this.hobbies = hobbies
     this.isVegan = isVegan
   }
+  talk() {
+      return `Hillou i am ${this.name}`
+  }
 }
 
 const teacher = new Person("Ildana", 24, ['coding', 'gaming'], true)  
