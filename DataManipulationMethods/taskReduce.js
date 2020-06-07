@@ -79,3 +79,7 @@ Examples:
 function partition(arr, callback){
     
 }
+
+const arr = [1,2,3,4]
+
+console.log(arr.reduce((curr, next) => curr+ next))
