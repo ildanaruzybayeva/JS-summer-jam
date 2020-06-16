@@ -8,6 +8,9 @@ let p = document.createElement('p');
 const words = document.querySelector('.words');
 words.appendChild(p);
 
+const btnStart = document.querySelector('.start')
+const btnEnd = document.querySelector('.end')
+
 recognition.addEventListener('result', e => {
     const transcript = Array.from(e.results)
         .map(result => result[0])
@@ -24,5 +27,11 @@ recognition.addEventListener('result', e => {
 });
 
 recognition.addEventListener('end', recognition.start);
-
 recognition.start();
+
+const handleStop = () => {
+    recognition.stop();
+    console.log('Speech recognition has stopped.');
+}
+
+btnEnd.addEventListener('click', handleStop)
