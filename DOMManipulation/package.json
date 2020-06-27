@@ -1,0 +1,15 @@
+{
+  "name": "dommanipulation",
+  "version": "1.0.0",
+  "description": "```javascript\r // Returns a reference to the element by its ID.\r document.getElementById('someid');",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --directory --server --files \"*.css, *.html, *.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
